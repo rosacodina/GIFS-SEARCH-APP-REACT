@@ -1,6 +1,6 @@
 import { useState } from "react";
-import AddCategory from "./components/AddCategory";
-import GifGrid from "./components/GifGrid";
+import {AddCategory} from "./components";
+import { GifGrid } from "./components";
 
 const GifExpertApp = () => {
   const [categories, setCategories] = useState(["Sky"]);

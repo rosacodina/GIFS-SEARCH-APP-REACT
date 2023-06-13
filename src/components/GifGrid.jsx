@@ -27,4 +27,4 @@ const GifGrid = ({ category }) => {
   )
 }
 
-export default GifGrid;
+export {GifGrid};
