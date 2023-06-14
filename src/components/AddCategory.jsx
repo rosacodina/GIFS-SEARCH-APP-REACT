@@ -27,6 +27,7 @@ const AddCategory = ( {onNewCategory}) => {
         placeholder= "Busca un gif"
         value = { inputValue }
         onChange = { (event) => onInputChange( event ) }
+        data-testid="category-input"
       />
 
     </form>
