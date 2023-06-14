@@ -25,25 +25,25 @@ describe('Pruebas en Gifgrid', () => {
   test('debe mostrar items cuando se cargan las imágenes mediante useFetchGifs  ', () => {
     const gifs = [
       {
-      id: "ABC",
-      title: "miercoles",
-      url: "https://localhost/miercoles.jpg"
-    },
-    {
-      id: "231",
-      title: "lunes",
-      url: "https://localhost/lunes.jpg"
-    },
-  ]
+        id: "ABC",
+        title: "miercoles",
+        url: "https://localhost/miercoles.jpg"
+      },
+      {
+        id: "231",
+        title: "lunes",
+        url: "https://localhost/lunes.jpg"
+      },
+    ];
+
     useFetchGifs.mockReturnValue({
       images: gifs,
       isLoading: false
     });
 
     render( <GifGrid category={ category } /> ); 
-    expect( screen.getAllByRole('img').length).toBe(2);   
+    expect( screen.getAllByRole('presentation').length).toBe(2);   
+  
   });
   
-  
-
 });

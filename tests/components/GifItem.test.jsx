@@ -18,7 +18,7 @@ describe('Pruebas en GifItem component', () => {
     
     render(<GifItem title={ title } url={ url } />);
     //screen.debug();
-    const { src, alt } = screen.getByRole("img");
+    const { src, alt } = screen.getByRole("presentation");
     expect( src ).toBe( url );
     expect( alt ).toBe( alt );
   });
